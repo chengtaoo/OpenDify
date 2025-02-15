@@ -23,7 +23,7 @@ logging.getLogger("httpx").setLevel(logging.DEBUG)
 load_dotenv()
 
 # 从环境变量获取API基础URL
-DIFY_API_BASE = os.getenv("DIFY_API_BASE", "http://2ya41yc84533.vicp.fun:35850/v1")
+DIFY_API_BASE = os.getenv("DIFY_API_BASE", "http://dify/v1")
 
 # 增加超时时间
 TIMEOUT = httpx.Timeout(30.0, connect=10.0)
